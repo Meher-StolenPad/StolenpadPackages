@@ -1,6 +1,6 @@
+#if UNITY_EDITOR
 namespace Stolenpad.Utils
 {
-#if UNITY_EDITOR
     using UnityEditor;
     using UnityEngine;
 
@@ -11,8 +11,10 @@ namespace Stolenpad.Utils
         {
             base.OnInspectorGUI();
             ScreenshotCapture screenshotCapture = (ScreenshotCapture)target;
-            if (GUILayout.Button("Screenshot Caputre"))
-                screenshotCapture.Screenshot();
+            if (GUILayout.Button("Multiple Screenshot Caputre"))
+                screenshotCapture.MultipleScreenshot();
+            if (GUILayout.Button("Single Screenshot Caputre"))
+                screenshotCapture.SingleScreenshot();
 
 
             string howToUse = "HOW TO USE:  \n " +
@@ -28,5 +30,5 @@ namespace Stolenpad.Utils
             EditorGUILayout.HelpBox(howToUse, MessageType.Info);
         }
     }
-#endif
 }
+#endif
