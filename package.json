@@ -9,8 +9,7 @@
   "changelogUrl": "https://example.com/changelog.html",
   "licensesUrl": "https://example.com/licensing.html",
   "dependencies": {
-    "com.stolenpad.ss": "1.0.0",
-    "com.stolenpad.other-package": "2.0.0"
+    "com.stolenpad.ss": "1.0.0"
  },
  "keywords": [
     "keyword1",
